@@ -108,7 +108,8 @@ header::before {
     max-width: 700px;
     padding: 80px 20px;
     text-align: center;
-    z-index: 2; /* pra ficar por cima da imagem do ::before */
+    z-index: 2;
+    /* pra ficar por cima da imagem do ::before */
 }
 
 .header-content img {
@@ -130,7 +131,7 @@ header::before {
 }
 
 /* World characters style */
-.world-characters{
+.world-characters {
     width: 100%;
     max-width: 900px;
     position: absolute;
@@ -145,7 +146,7 @@ header::before {
     --webkit-mask: var(--character-top-image-src) bottom / 100% no-repeat;
 }
 
-.world-characters#bottom-characters{
+.world-characters#bottom-characters {
     height: 500px;
     background-color: var(--character-bottom-image-color);
     top: 3px;
@@ -184,7 +185,32 @@ section {
 #section-inverted-world .section-texts {
     width: 50%;
 }
+
 #section-inverted-world .section-texts h2 {
     max-width: 300px;
 }
 
+/* Section 02 - Stranger Things Trailer */
+
+#section-stranger-things-trailer .section-texts {
+    width: 50%;
+    text-align: right;
+}
+
+#section-stranger-things-trailer .section-texts h2 {
+    max-width: 425px;
+    display: inline-block;
+}
+
+#section-stranger-things-trailer .video-frame {
+    background-color: var(--primary-color);
+}
+
+#section-stranger-things-trailer .video-frame iframe {
+    position: relative;
+    bottom: 24px;
+    left: 24px;
+    border: 2px solid;
+    border-image: linear-gradient(var(--primary-color), var(--primary-color-contrast));
+    border-image-slice: 10;
+}
