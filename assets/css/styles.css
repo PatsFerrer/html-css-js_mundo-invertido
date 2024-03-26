@@ -25,6 +25,7 @@
     --character-bottom-image-color: #e5e5e5;
     --background-lamp-image: url("../images/backgrounds/lamps.png");
     --footer-background-color: #b5bbbf;
+    --footer-logo-pats: #220f0f;
 }
 
 .dark-theme {
@@ -41,6 +42,7 @@
     --character-top-image-color: #000;
     --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
     --footer-background-color: #220f0f;
+    --footer-logo-pats: #cf0f0f;
 }
 
 .dark-theme button,
@@ -377,6 +379,16 @@ footer {
 footer p {
     max-width: 700px;
     margin-bottom: 24px;
+    font-family: var(--featured-font-family);
+}
+
+footer a img {
+    background-color: var(--footer-logo-pats);
+    border-radius: 50%;
+}
+
+footer a img:hover {
+    background-color: rgb(133, 13, 13);
 }
 
 footer::before,
@@ -398,4 +410,22 @@ footer::before {
 footer::after {
     right: -50px;
     transform: rotateZ(10deg);
+}
+
+.tremor:hover {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0); }
+    10% { transform: translate(-2px, -2px) rotate(-2deg); }
+    20% { transform: translate(5px, 5px) rotate(2deg); }
+    30% { transform: translate(-2px, -2px) rotate(-2deg); }
+    40% { transform: translate(5px, 5px) rotate(2deg); }
+    50% { transform: translate(-2px, -2px) rotate(-2deg); }
+    60% { transform: translate(5px, 5px) rotate(2deg); }
+    70% { transform: translate(-2px, -2px) rotate(-2deg); }
+    80% { transform: translate(5px, 5px) rotate(2deg); }
+    90% { transform: translate(-2px, -2px) rotate(-2deg); }
+    100% { transform: translate(0, 0) rotate(0); }
 }
