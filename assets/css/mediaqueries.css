@@ -87,6 +87,7 @@
     .section-texts p {
         margin-bottom: 40px;
         text-align: center;
+        padding: 10px;
     }
 
     /* Section trailer */
